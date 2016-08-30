@@ -1,0 +1,44 @@
+* 174;Fixture.ckt
+
+.CIRCUITNAME "Fixture"
+.rootnamemap 174;Fixture
+.namemap
+W2=174;Fixture;48
+L3=174;Fixture;49
+W3=174;Fixture;47
+L4=174;Fixture;50
+C6=174;Fixture;51
+C7=174;Fixture;52
+C8=174;Fixture;53
+C9=174;Fixture;54
+.endnamemap
+.stringparam syslib = "C:\Ansoft\DesignerSV2\DesignerSV2\syslib"
+.stringparam userlib = "C:\Ansoft\DesignerSV2\DesignerSV2\userlib"
+.stringparam personallib = "C:\Ansoft\DesignerSV2\MyProjects\PersonalLib"
+.stringparam projectdir = "D:\Shared\Split_Deembedd"
+
+*begin toplevel circuit
+
+.SUB Microstrip MS(
++   H=6.6mil Er=3.50000000000000 TAND=0.0250000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413800000000 T1=0.7mil)
+
+MSTRL:48 net_94 net_66_1 W=10mil P=2500mil SUB=Microstrip
+IND:49 Port1_Fixture net_65_1 L=0.25nH 
+MSTRL:47 net_65_1 net_94 W=10mil P=2500mil SUB=Microstrip
+IND:50 net_66_1 Port2_Fixture L=0.25nH 
+CAP:51 0 Port1_Fixture C=0.25pF 
+CAP:52 0 net_65_1 C=0.25pF 
+CAP:53 0 net_66_1 C=0.25pF 
+CAP:54 0 Port2_Fixture C=0.25pF 
+PORT:Port2_Fixture Port2_Fixture 0 PNUM=2 rz=50Ohm iz=0Ohm 
+PORT:Port1_Fixture Port1_Fixture 0 PNUM=1 rz=50Ohm iz=0Ohm 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 0.01GHz 20GHz 0.01GHz
++ SWPORD = {F}
++ SolutionFile="C:\Ansoft\DesignerSV2\Temp\TestCase1.results\Fixture_NWA1_105_U2_Fixture_0_86\Fixture_NWA1_105_U2_Fixture_0_86.sol"
+
+.end

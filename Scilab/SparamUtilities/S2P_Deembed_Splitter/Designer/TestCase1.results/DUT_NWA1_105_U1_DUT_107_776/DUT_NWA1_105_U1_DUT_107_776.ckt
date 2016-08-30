@@ -1,0 +1,36 @@
+* 0;DUT.ckt
+
+.CIRCUITNAME "DUT"
+.rootnamemap 0;DUT
+.namemap
+R5=0;DUT;82
+R4=0;DUT;81
+C6=0;DUT;80
+R6=0;DUT;83
+.endnamemap
+.stringparam syslib = "C:\Ansoft\DesignerSV2\DesignerSV2\syslib"
+.stringparam userlib = "C:\Ansoft\DesignerSV2\DesignerSV2\userlib"
+.stringparam personallib = "C:\Ansoft\DesignerSV2\MyProjects\PersonalLib"
+.stringparam projectdir = "D:\Shared\Split_Deembedd"
+
+*begin toplevel circuit
+
+.SUB Microstrip MS(
++   H=6.6mil Er=3.50000000000000 TAND=0.0250000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413800000000 T1=0.7mil)
+
+RES:82 0 Port2_DUT R=1000
+RES:81 0 Port1_DUT R=1000
+CAP:80 Port1_DUT Port2_DUT C=15pF 
+RES:83 Port1_DUT Port2_DUT R=50
+PORT:Port2_DUT Port2_DUT 0 PNUM=2 rz=50Ohm iz=0Ohm 
+PORT:Port1_DUT Port1_DUT 0 PNUM=1 rz=50Ohm iz=0Ohm 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 0.01GHz 20GHz 0.01GHz
++ SWPORD = {F}
++ SolutionFile="C:\Ansoft\DesignerSV2\Temp\TestCase1.results\DUT_NWA1_105_U1_DUT_107_776\DUT_NWA1_105_U1_DUT_107_776.sol"
+
+.end

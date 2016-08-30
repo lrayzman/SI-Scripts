@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <errno.h>
+
+
+#define errcode0 0 	// Return OK
+#define errcode1 1	// Invalid or null  filename
+#define errcode2 2	// File extension has invalid format
+#define errcode3 3	// Unable to access file
+#define errcode4 4	// Unable to allocate memory for file read
+#define errcode5 5	// Error reading file
+#define errcode6 6
+#define errcode1000 1000	// Unexpected error
+
+
+int main()
+{
+	uint iNport = 0;				// Number of ports
+	uint iFilelen = 0;				// File length
+	
+	int i, j, k;
+	
+	char filename[14]="test_spar.s2p";		// Temporary filename
+	char *filedata;					// File contents
+	FILE *spfile;
+	
+/* Guess at a number of ports from file name */
+	
+	
+	if ((i=strlen(filename[14]) == 0))		// Find the end of filename
+	{
+		return(errcode1);
+	}
+	
+	
+	j=i;
+	while ((filename[j] != '.') && j>=0) j--;
+	
+	
+	// Let's do some basic checking on the extension
+	if(j==0) return (errcode2);
+	
+	if((toupper(filename[j+1])!= 'S') || (toupper(filename[i])!= 'P') return (errcode2);
+		
+	// Extract port count 
+        for (j=j+2; j<i; j++)
+       	{
+       		if (!isdigit(filename[j])) 
+       		{
+       			return(errcode2);
+       		}
+       		else
+   		{	
+   			nPort=(atoi(filename[j])*(10^(i-j-1))+nPort;
+   			if (errno == ERANGE)
+    			{
+       				return(errcode1000);
+    			}
+       		}		
+       	} 
+       	
+       	if (nPort <= 0) return (errcode2);
+       		
+/* open and read in the entire file */
+
+	if ((spfile=fopen(&filename,"rb")) == NULL) {
+	  return(errcode3);
+	}
+	
+	if (fseek(spfile, 0, SEEK_END)== NULL)
+	{
+	  return(errcode3);
+	}
+	
+	// Get file length
+	if (iFilelen=ftell(spfile))==NULL)
+	{
+	  return(errcode3);
+	}
+	
+	//Read file into memory
+	if (fseek(spfile, 0, SEEK_SET)== NULL)
+	{
+	  return(errcode3);
+	}
+	
+	if((filedata=(char*)malloc(sizeof(char)*iFilelen))==NULL)
+	{
+		fclose(spfile);
+		return(errcode4);
+	}
+	
+	if (fread(filedata, sizeof(char), iFilelen, spfile)  < iFilelen)
+	{
+		fclose(spfile);
+		return(errcode5);
+	}
+	
+
+/* skip all comment lines */
+
+
+
+// read-in format and set the mode
+
+// 
+	
+	return(errcode0);
+}

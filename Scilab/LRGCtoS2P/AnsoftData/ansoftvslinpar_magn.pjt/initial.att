@@ -1,0 +1,14 @@
+a 27 Trace
+        c 0
+a 9 Substrate
+        c 9
+a 18 GND
+        c 7
+a 0 background
+        c 12
+e
+y   -150 -27
+   150 6
+u   39370.07874 MILS
+s   6.77333333336043E-005
+end

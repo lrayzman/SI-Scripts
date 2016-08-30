@@ -1,0 +1,90 @@
+* 0;Circuit1.ckt
+
+.CIRCUITNAME "Circuit1"
+.rootnamemap 0;Circuit1
+.namemap
+L3=0;Circuit1;49
+L4=0;Circuit1;50
+W3=0;Circuit1;47
+W1=0;Circuit1;14
+W4=0;Circuit1;48
+R1=0;Circuit1;2
+L2=0;Circuit1;23
+C7=0;Circuit1;51
+R3=0;Circuit1;4
+L1=0;Circuit1;22
+R2=0;Circuit1;3
+C1=0;Circuit1;1
+W2=0;Circuit1;21
+C3=0;Circuit1;27
+C4=0;Circuit1;28
+C5=0;Circuit1;29
+C2=0;Circuit1;24
+C8=0;Circuit1;52
+C12=0;Circuit1;99
+C9=0;Circuit1;53
+R5=0;Circuit1;82
+C10=0;Circuit1;54
+C11=0;Circuit1;98
+R4=0;Circuit1;81
+C6=0;Circuit1;80
+W5=0;Circuit1;94
+R6=0;Circuit1;83
+L5=0;Circuit1;96
+.endnamemap
+.stringparam syslib = "C:\Ansoft\DesignerSV2\DesignerSV2\syslib"
+.stringparam userlib = "C:\Ansoft\DesignerSV2\DesignerSV2\userlib"
+.stringparam personallib = "C:\Ansoft\DesignerSV2\MyProjects\PersonalLib"
+.stringparam projectdir = "D:\Shared\Split_Deembedd"
+
+*begin toplevel circuit
+
+.SUB Microstrip MS(
++   H=6.6mil Er=3.50000000000000 TAND=0.0250000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413800000000 T1=0.7mil)
+
+IND:49 Port1_Fixture net_65_1 L=0.25nH 
+IND:50 net_66_1 Port2_Fixture L=0.25nH 
+MSTRL:47 net_65_1 net_94 W=10mil P=2500mil SUB=Microstrip
+MSTRL:14 net_65 net_6 W=10mil P=2500mil SUB=Microstrip
+MSTRL:48 net_94 net_66_1 W=10mil P=2500mil SUB=Microstrip
+RES:2 0 net_6 R=1000
+IND:23 net_66 Port2 L=0.25nH 
+CAP:51 0 Port1_Fixture C=0.25pF 
+RES:4 net_6 net_7 R=50
+IND:22 Port1 net_65 L=0.25nH 
+RES:3 0 net_7 R=1000
+CAP:1 net_6 net_7 C=15pF 
+MSTRL:21 net_7 net_66 W=10mil P=2500mil SUB=Microstrip
+CAP:27 0 net_65 C=0.25pF 
+CAP:28 0 net_66 C=0.25pF 
+CAP:29 0 Port2 C=0.25pF 
+CAP:24 0 Port1 C=0.25pF 
+CAP:52 0 net_65_1 C=0.25pF 
+CAP:99 0 net_65_1_1 C=0.25pF 
+CAP:53 0 net_66_1 C=0.25pF 
+RES:82 0 Port2_DUT R=1000
+CAP:54 0 Port2_Fixture C=0.25pF 
+CAP:98 0 Port1_FixtureP C=0.25pF 
+RES:81 0 Port1_DUT R=1000
+CAP:80 Port1_DUT Port2_DUT C=15pF 
+MSTRL:94 net_65_1_1 Port2_FixtureP W=10mil P=2500mil SUB=Microstrip
+RES:83 Port1_DUT Port2_DUT R=50
+IND:96 Port1_FixtureP net_65_1_1 L=0.25nH 
+PORT:Port2 Port2 0 PNUM=2 
+PORT:Port1 Port1 0 PNUM=1 
+PORT:Port2_DUT Port2_DUT 0 PNUM=8 rz=50Ohm iz=0Ohm 
+PORT:Port1_FixtureP Port1_FixtureP 0 PNUM=5 rz=50Ohm iz=0Ohm 
+PORT:Port2_FixtureP Port2_FixtureP 0 PNUM=6 rz=50Ohm iz=0Ohm 
+PORT:Port1_Fixture Port1_Fixture 0 PNUM=3 rz=50Ohm iz=0Ohm 
+PORT:Port2_Fixture Port2_Fixture 0 PNUM=4 rz=50Ohm iz=0Ohm 
+PORT:Port1_DUT Port1_DUT 0 PNUM=7 rz=50Ohm iz=0Ohm 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 0.01GHz 20GHz 0.01GHz
++ SWPORD = {F}
++ SolutionFile="C:\Ansoft\DesignerSV2\Temp\TestCase1.results\Circuit1_NWA1_105_U1_Circuit1_107_401\Circuit1_NWA1_105_U1_Circuit1_107_401.sol"
+
+.end

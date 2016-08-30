@@ -1,0 +1,151 @@
+%<TpX v="5" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3">
+%  <rect x="41" y="89" w="42" h="41" li="none" fill="#CCCCCC"/>
+%  <rect x="50" y="90" w="25" h="37"/>
+%  <line x1="50" y1="125" x2="45" y2="125"/>
+%  <line x1="50" y1="120" x2="45" y2="120"/>
+%  <text x="51" y="123.5" t="1" h="4"/>
+%  <text x="51" y="119" t="2" h="4"/>
+%  <text x="51" y="111" t="3" h="4"/>
+%  <text x="51" y="106.5" t="4" h="4"/>
+%  <line x1="50" y1="112.5" x2="45" y2="112.5"/>
+%  <line x1="50" y1="107.5" x2="45" y2="107.5"/>
+%  <text x="51" y="98" t="n" h="3"/>
+%  <line x1="50" y1="92.5" x2="45" y2="92.5"/>
+%  <line x1="50" y1="97.5" x2="45" y2="97.5"/>
+%  <line x1="50" y1="125" x2="45" y2="125"/>
+%  <line x1="50" y1="120" x2="45" y2="120"/>
+%  <line x1="50" y1="112.5" x2="45" y2="112.5"/>
+%  <line x1="50" y1="107.5" x2="45" y2="107.5"/>
+%  <line x1="50" y1="97.5" x2="45" y2="97.5"/>
+%  <line x1="50" y1="92.5" x2="45" y2="92.5"/>
+%  <line x1="80" y1="125" x2="75" y2="125"/>
+%  <line x1="80" y1="120" x2="75" y2="120"/>
+%  <line x1="80" y1="112.5" x2="75" y2="112.5"/>
+%  <line x1="80" y1="107.5" x2="75" y2="107.5"/>
+%  <line x1="80" y1="97.5" x2="75" y2="97.5"/>
+%  <line x1="80" y1="92.5" x2="75" y2="92.5"/>
+%  <text x="72" y="92.5" t="n" h="4"/>
+%  <text x="62.705" y="107.045" t=". . ." h="5" rotdeg="270"/>
+%  <text x="72" y="92.5" t="n" h="4"/>
+%  <text x="69" y="96" t="n-1" h="4"/>
+%  <text x="51" y="95.5" t="2" h="3"/>
+%  <line x1="50.76" y1="97.76" x2="52.76" y2="97.76"/>
+%  <text x="53" y="96" t="-1" h="4"/>
+%  <text x="51" y="93" t="n" h="3"/>
+%  <text x="51" y="90.5" t="2" h="3"/>
+%  <line x1="50.76" y1="92.76" x2="52.76" y2="92.76"/>
+%  <text x="51" y="98" t="n" h="3"/>
+%  <text x="51" y="95.5" t="2" h="3"/>
+%  <line x1="50.76" y1="97.76" x2="52.76" y2="97.76"/>
+%  <text x="68" y="125.3" t="n" h="3"/>
+%  <text x="68" y="122.8" t="2" h="3"/>
+%  <line x1="67.76" y1="125.06" x2="69.76" y2="125.06"/>
+%  <text x="68" y="125.3" t="n" h="3"/>
+%  <text x="68" y="122.8" t="2" h="3"/>
+%  <line x1="67.76" y1="125.06" x2="69.76" y2="125.06"/>
+%  <text x="70" y="123.3" t="+1" h="4"/>
+%  <text x="68" y="121" t="n" h="3" li="none"/>
+%  <text x="68" y="118.5" t="2" h="3" li="none"/>
+%  <line x1="67.76" y1="120.76" x2="69.76" y2="120.76" li="none"/>
+%  <text x="68" y="121" t="n" h="3" li="none"/>
+%  <text x="68" y="118.5" t="2" h="3" li="none"/>
+%  <line x1="67.76" y1="120.76" x2="69.76" y2="120.76" li="none"/>
+%  <text x="70" y="119" t="+2" h="4" li="none"/>
+%  <line x1="67.76" y1="120.76" x2="69.76" y2="120.76"/>
+%  <text x="68" y="110.8" t="2" h="3"/>
+%  <line x1="67.76" y1="113.06" x2="69.76" y2="113.06"/>
+%  <text x="68" y="113.8" t="n" h="3"/>
+%  <text x="68" y="110.8" t="2" h="3"/>
+%  <line x1="67.76" y1="113.06" x2="69.76" y2="113.06"/>
+%  <text x="70" y="111.3" t="+3" h="4"/>
+%  <text x="68" y="109" t="n" h="3" li="none"/>
+%  <text x="68" y="106.5" t="2" h="3" li="none"/>
+%  <line x1="67.76" y1="108.76" x2="69.76" y2="108.76" li="none"/>
+%  <text x="68" y="109" t="n" h="3" li="none"/>
+%  <text x="68" y="106.5" t="2" h="3" li="none"/>
+%  <line x1="67.76" y1="108.76" x2="69.76" y2="108.76" li="none"/>
+%  <text x="70" y="107" t="+4" h="4" li="none"/>
+%  <line x1="67.76" y1="108.76" x2="69.76" y2="108.76"/>
+%</TpX>
+\begin{figure}
+\centering
+\ifpdf
+  \setlength{\unitlength}{1bp}%
+  \begin{picture}(130.39, 127.56)(0,0)
+  \put(0,0){\includegraphics{PortMapping_Seq.pdf}}
+  \put(34.02,103.46){\fontsize{11.38}{13.66}\selectfont 1}
+  \put(34.02,90.71){\fontsize{11.38}{13.66}\selectfont 2}
+  \put(34.02,68.03){\fontsize{11.38}{13.66}\selectfont 3}
+  \put(34.02,55.28){\fontsize{11.38}{13.66}\selectfont 4}
+  \put(34.02,31.18){\fontsize{8.54}{10.24}\selectfont n}
+  \put(93.54,15.59){\fontsize{11.38}{13.66}\selectfont n}
+  \put(67.20,56.82){\rotatebox{270.00}{\fontsize{14.23}{17.07}\selectfont \smash{\makebox[0pt][l]{. . .}}}}
+  \put(93.54,15.59){\fontsize{11.38}{13.66}\selectfont n}
+  \put(85.04,25.51){\fontsize{11.38}{13.66}\selectfont n-1}
+  \put(34.02,24.09){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(39.69,25.51){\fontsize{11.38}{13.66}\selectfont -1}
+  \put(34.02,17.01){\fontsize{8.54}{10.24}\selectfont n}
+  \put(34.02,9.92){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(34.02,31.18){\fontsize{8.54}{10.24}\selectfont n}
+  \put(34.02,24.09){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,108.57){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,101.48){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,108.57){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,101.48){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,102.90){\fontsize{11.38}{13.66}\selectfont +1}
+  \put(82.20,96.38){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,89.29){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,96.38){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,89.29){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,90.71){\fontsize{11.38}{13.66}\selectfont +2}
+  \put(82.20,67.46){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,75.97){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,67.46){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,68.88){\fontsize{11.38}{13.66}\selectfont +3}
+  \put(82.20,62.36){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,55.28){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,62.36){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,55.28){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,56.69){\fontsize{11.38}{13.66}\selectfont +4}
+  \end{picture}%
+\else
+  \setlength{\unitlength}{1bp}%
+  \begin{picture}(130.39, 127.56)(0,0)
+  \put(0,0){\includegraphics{PortMapping_Seq}}
+  \put(34.02,103.46){\fontsize{11.38}{13.66}\selectfont 1}
+  \put(34.02,90.71){\fontsize{11.38}{13.66}\selectfont 2}
+  \put(34.02,68.03){\fontsize{11.38}{13.66}\selectfont 3}
+  \put(34.02,55.28){\fontsize{11.38}{13.66}\selectfont 4}
+  \put(34.02,31.18){\fontsize{8.54}{10.24}\selectfont n}
+  \put(93.54,15.59){\fontsize{11.38}{13.66}\selectfont n}
+  \put(67.20,56.82){\rotatebox{270.00}{\fontsize{14.23}{17.07}\selectfont \smash{\makebox[0pt][l]{. . .}}}}
+  \put(93.54,15.59){\fontsize{11.38}{13.66}\selectfont n}
+  \put(85.04,25.51){\fontsize{11.38}{13.66}\selectfont n-1}
+  \put(34.02,24.09){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(39.69,25.51){\fontsize{11.38}{13.66}\selectfont -1}
+  \put(34.02,17.01){\fontsize{8.54}{10.24}\selectfont n}
+  \put(34.02,9.92){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(34.02,31.18){\fontsize{8.54}{10.24}\selectfont n}
+  \put(34.02,24.09){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,108.57){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,101.48){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,108.57){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,101.48){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,102.90){\fontsize{11.38}{13.66}\selectfont +1}
+  \put(82.20,96.38){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,89.29){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,96.38){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,89.29){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,90.71){\fontsize{11.38}{13.66}\selectfont +2}
+  \put(82.20,67.46){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,75.97){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,67.46){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,68.88){\fontsize{11.38}{13.66}\selectfont +3}
+  \put(82.20,62.36){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,55.28){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(82.20,62.36){\fontsize{8.54}{10.24}\selectfont n}
+  \put(82.20,55.28){\fontsize{8.54}{10.24}\selectfont 2}
+  \put(87.87,56.69){\fontsize{11.38}{13.66}\selectfont +4}
+  \end{picture}%
+\fi
+\end{figure}

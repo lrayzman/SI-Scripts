@@ -1,0 +1,11 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>sptlbx_writetchstn</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="S-parameters Toolbox"><link rel="up" href="section_06690d9fea1583029e3d1e2372332fa5.html" title="Part&nbsp;I.&nbsp;S-parameters Toolbox"><link rel="prev" href="sptlbx_readtchstn.html" title="sptlbx_readtchstn"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="en"><a name="sptlbx_writetchstn"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>sptlbx_writetchstn &#8212; Touchstone file write</p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis"> sptlbx_writetchstn(a, b, c)</pre></div><div class="refsection" lang="en"><a name="d0e99"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">a</span></dt><dd><p>
+            string
+         </p></dd><dt><span class="term">b</span></dt><dd><p>
+            real-valued row vector
+         </p></dd><dt><span class="term">c</span></dt><dd><p>
+            square hypermatrix of complex values
+         </p></dd></dl></div></div><div class="refsection" lang="en"><a name="d0e121"></a><h2>Description</h2><p>Write S-parameter data to Touchstone file</p><p>String <code class="literal">a</code> is the filename (excluding extension) of the Touchstone file. </p><p>Vector <code class="literal">b</code> contains the frequency points of the S-parameters </p><p>Hypermatrix <code class="literal">c</code> is a square matrix and must be the same depth as the frequency vector <code class="literal">b</code> </p></div><div class="refsection" lang="en"><a name="d0e144"></a><h2>Examples</h2><pre class="programlisting">sptlbx_writetchstn(filename, frequency, data)</pre></div><div class="refsection" lang="en"><a name="d0e149"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="sptlbx_readtchstn.html" title="sptlbx_readtchstn">sptlbx_readtchstn</a>
+      </span></div><div class="refsection" lang="en"><a name="d0e158"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Lenny Rayzman</td></tr></table></div></div></body></html>

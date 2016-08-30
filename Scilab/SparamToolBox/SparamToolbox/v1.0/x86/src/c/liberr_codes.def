@@ -1,0 +1,4 @@
+LIBRARY    liberr_codes.dll
+EXPORTS
+	CreateSpErr
+	DestroySpErr

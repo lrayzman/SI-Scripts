@@ -1,0 +1,42 @@
+#
+# Ansoft Environment Log
+#
+
+ALLUSERSPROFILE=C:\Documents and Settings\All Users
+APPDATA=C:\Documents and Settings\lenny.rayzman\Application Data
+CDSROOT=C:\Cadence\Orcad_9.2.3
+CDS_LIC_FILE=C:\Cadence\Orcad_9.2.3\tools\license.dat
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=LENNY-LAPTOP
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DONT_AUTOCONFIGURE=1
+FMHOME=c:/ansoft/frame
+FP_NO_HOST_CHECK=NO
+HELPD=c:/ansoft/helpd
+HOMEDRIVE=C:
+HOMEPATH=\Documents and Settings\lenny.rayzman
+KMP_DUPLICATE_LIB_OK=TRUE
+LMC_HOME=C:\Xilinx\smartmodel\nt\installed_nt
+LM_LICENSE_FILE=C:\License File\license.dat
+LOGONSERVER=\\CATALYSTPDC
+MAXWELL_DIR=c:\ansoft\myprojects
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Cadence\Orcad_9.2.3\tools\Capture;C:\Cadence\Orcad_9.2.3\tools\bin;C:\Cadence\Orcad_9.2.3\tools\jre\bin;C:\Cadence\Orcad_9.2.3\tools\fet\bin;C:\Program Files\UltraEdit;C:\Xilinx\bin\nt;C:\Modeltech_xe\win32xoem;c:/ansoft\frame\bin
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 2 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0209
+ProgramFiles=C:\Program Files
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\DOCUME~1\LENNY~1.RAY\LOCALS~1\Temp
+TMP=C:\DOCUME~1\LENNY~1.RAY\LOCALS~1\Temp
+USERDNSDOMAIN=CATALYST-ENT.COM
+USERDOMAIN=CEIPDC
+USERNAME=lenny.rayzman
+USERPROFILE=C:\Documents and Settings\lenny.rayzman
+windir=C:\WINDOWS
+XILINX=C:\Xilinx

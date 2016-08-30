@@ -1,0 +1,19 @@
+B_HEADER
+ FileSign ASSN FormVers 1.000 CreaSign MATS CreaVers 3.000
+ FileMark DBRootFile
+E_HEADER
+
+B_DATA 
+ B_DBASE ansoftvslinpar_elec 0 BlockSep B_ASNTAB 
+  B_ASNTAB ansoftvslinpar_elec 1 BlockSep AssignTo PrvIndex 27 ParentDB ansoftvslinpar_elec 
+   AssignTo Trace 27 
+    Material perf_conductor 2 
+   AssignTo Substrate 9 
+    Material Substrate 3 
+   AssignTo GND 18 
+    Material perf_conductor 2 
+   AssignTo background 0 
+    Material vacuum 1 
+  E_ASNTAB 
+ E_DBASE 
+E_DATA 

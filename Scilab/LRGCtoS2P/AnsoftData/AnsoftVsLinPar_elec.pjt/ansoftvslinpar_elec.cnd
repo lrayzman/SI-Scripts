@@ -1,0 +1,11 @@
+B_HEADER
+ FileSign COND FormVers 1.000 CreaSign CNDS CreaVers 3.000
+E_HEADER
+
+B_DATA 
+ MaxId 0 MaxPrllId 0 MaxDiffpairId 0 
+ B_CNDLST 2 
+  Cond 18 GND ground 
+  Cond 27 Trace signal 
+ E_CNDLST 
+E_DATA 

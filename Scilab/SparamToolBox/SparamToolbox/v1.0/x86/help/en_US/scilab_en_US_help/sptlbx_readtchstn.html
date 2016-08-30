@@ -1,0 +1,15 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>sptlbx_readtchstn</title><link rel="stylesheet" href="javahelp.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.73.2"><link rel="start" href="index.html" title="S-parameters Toolbox"><link rel="up" href="section_06690d9fea1583029e3d1e2372332fa5.html" title="Part&nbsp;I.&nbsp;S-parameters Toolbox"><link rel="prev" href="section_06690d9fea1583029e3d1e2372332fa5.html" title="Part&nbsp;I.&nbsp;S-parameters Toolbox"><link rel="next" href="sptlbx_writetchstn.html" title="sptlbx_writetchstn"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry" lang="en"><a name="sptlbx_readtchstn"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>sptlbx_readtchstn &#8212; Touchstone file read</p></div><div class="refsynopsisdiv"><h2>Calling Sequence</h2><pre class="synopsis">[a,b] = sptlbx_readtchstn(c)</pre></div><div class="refsection" lang="en"><a name="d0e22"></a><h2>Parameters</h2><div class="variablelist"><dl><dt><span class="term">a</span></dt><dd><p>
+            real-valued row vector
+         </p></dd><dt><span class="term">b</span></dt><dd><p>
+            square hypermatrix of complex values
+         </p></dd><dt><span class="term">c</span></dt><dd><p>
+            string
+         </p></dd></dl></div></div><div class="refsection" lang="en"><a name="d0e44"></a><h2>Description</h2><p>Reads S-parameters from Touchstone file referenced by filename string <code class="literal">c</code>. 
+        Returns frequency points in <code class="literal">a</code> and s-parameter data into <code class="literal">b</code>.
+    </p><p>
+        <code class="literal">b</code> is a square complex hypermatrix of the same depth as the frequency vector
+    </p><p> </p></div><div class="refsection" lang="en"><a name="d0e65"></a><h2>Examples</h2><pre class="programlisting">[frequency, data]=sptlbx_readtchstn(filename)</pre></div><div class="refsection" lang="en"><a name="d0e70"></a><h2>See Also</h2><span class="simplelist">
+        <a class="link" href="sptlbx_writetchstn.html" title="sptlbx_writetchstn">sptlbx_writetchstn</a>
+      </span></div><div class="refsection" lang="en"><a name="d0e79"></a><h2>Authors</h2><table class="simplelist" border="0" summary="Simple list"><tr><td>Lenny Rayzman</td></tr></table></div></div></body></html>

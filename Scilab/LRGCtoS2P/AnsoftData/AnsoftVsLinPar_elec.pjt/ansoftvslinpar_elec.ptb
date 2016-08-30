@@ -1,0 +1,110 @@
+B_HEADER
+ FileSign PTBL FormVers 0.000 CreaSign ANS0 CreaVers 3.000
+E_HEADER
+
+B_DATA	
+ B_COLHDR	
+  B_COLUMN	1	
+   Type	STR	
+   Name	Setup	
+   Width	12	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	3	
+   Type	BOOL	
+   Name	Solved	
+   Width	6	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	2	
+   Type	BOOL	
+   Name	"Save Fields"	
+   Width	6	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	4	
+   Type	BOOL	
+   Name	Solve	
+   Width	6	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	100	
+   Type	LONG	
+   Name	Triangles	
+   Width	12	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	101	
+   Type	DBL	
+   Name	Energy(J)	
+   Width	12	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	102	
+   Type	DBL	
+   Name	Error(%)	
+   Width	12	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	104	
+   Type	VEC2	
+   Name	Force(N)	
+   Width	28	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	105	
+   Type	VEC2	
+   Name	AC-Force(N)	
+   Width	28	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	106	
+   Type	DBL	
+   Name	Torque(Nm)	
+   Width	12	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	107	
+   Type	DBL	
+   Name	AC-Torque(Nm)	
+   Width	12	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	108	
+   Type	DBL	
+   Name	"Power Loss(W)"	
+   Width	12	
+   Locked	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	103	
+   Type	DBL	
+   Name	"Current Flow(A)"	
+   Width	12	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+  B_COLUMN	109	
+   Type	DBL	
+   Name	"Core Loss(W/m)"	
+   Width	12	
+   Locked	
+   Invisible	
+   Nonremovable	
+  E_COLUMN	
+ E_COLHDR	
+E_DATA	

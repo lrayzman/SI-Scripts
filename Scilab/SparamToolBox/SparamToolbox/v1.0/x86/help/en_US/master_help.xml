@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY sptlbx_readtchstn SYSTEM "file:///E:\SCILAB~1.0\contrib\SPARAM~1\help\en_US\SPTLBX~1.XML">
+<!ENTITY sptlbx_writetchstn SYSTEM "file:///E:\SCILAB~1.0\contrib\SPARAM~1\help\en_US\SPTLBX~2.XML">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='s-parameters_toolbox_manual'>
+    <title>S-parameters Toolbox</title>
+  </info>
+
+<part xml:id='section_06690d9fea1583029e3d1e2372332fa5'>
+<title>S-parameters Toolbox</title>
+&sptlbx_readtchstn;
+&sptlbx_writetchstn;
+</part>
+</book>

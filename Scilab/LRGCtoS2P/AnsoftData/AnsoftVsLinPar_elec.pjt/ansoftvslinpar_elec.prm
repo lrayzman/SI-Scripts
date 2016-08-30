@@ -1,0 +1,35 @@
+B_HEADER
+ FileSign TEXT FormVers 1.100 CreaSign MFS2 CreaVers 3.000
+E_HEADER
+
+B_DATA 
+ SolveStatus SolveOk 
+ B_SOLFIL 
+  CurrSet fileset1 Y Y 
+  NextSet fileset2 N N 
+ E_SOLFIL 
+ MeshType Current 
+ MeshSize 169 
+ SolveFields Y 
+ SolveParameters Y 
+ SolveSweep N 
+ SweepType Fast 
+ MaxSweepIters 60 
+ SolveForce N 
+ SolveTorque N 
+ SolveMatrix N 
+ SolvePowerLoss Y 
+ SolveCoreLoss N 
+ SolveFlux N 
+ AdaptFlag Y 
+ DirectFlag N 
+ IccgFlag N 
+ NumberOfPasses 5 
+ RequestedPasses 5 
+ RemainingPasses 5 
+ Residual 1E-007 
+ NonLinearResidual 0.005 
+ PercentEnergy 1 
+ PercentRefine 15 
+ Frequency 5000000000 
+E_DATA 

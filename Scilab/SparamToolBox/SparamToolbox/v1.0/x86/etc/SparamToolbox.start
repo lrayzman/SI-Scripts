@@ -1,0 +1,55 @@
+// ==========================S-parameter ToolBox===============================
+// ============================================================================
+//
+// (c)2010  L. Rayzman
+//
+// ============================================================================
+// ============================================================================
+
+mprintf("Start S-Parameter Toolbox\n");
+
+if isdef("sparam_tlbx_lib") then
+	warning("S-Parameter Toolbox library is already loaded");
+	return;
+end
+
+etc_tlbx  = get_absolute_file_path("SparamToolbox.start");
+etc_tlbx  = getshortpathname(etc_tlbx);
+root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+//Load  functions library
+// =============================================================================
+mprintf("\tLoad S-Parameter Toolbox macros\n");
+pathmacros = pathconvert( root_tlbx ) + "macros" + filesep();
+toolbox_skeletonlib = lib(pathmacros);
+clear pathmacros;
+
+// load gateways
+// =============================================================================
+mprintf("\tLoad S-Parameter Toolbox gateways\n");
+ilib_verbose(0);
+exec(pathconvert(root_tlbx+"/sci_gateway/loader_gateway.sce",%f));
+
+// Load and add help chapter
+// =============================================================================
+if or(getscilabmode() == ["NW";"STD"]) then
+	mprintf("\tLoad S-Parameter Toolbox help\n");
+	path_addchapter = pathconvert(root_tlbx+"/jar");
+	if ( isdir(path_addchapter) <> [] ) then
+		add_help_chapter("S-Parameter Toolbox", path_addchapter, %F);
+		clear add_help_chapter;
+	end
+	clear path_addchapter;
+end
+
+// Load demos
+// =============================================================================
+//if or(getscilabmode() == ["NW";"STD"]) then
+//	mprintf("\tLoad S-Parameter Toolbox demos\n");
+//	pathdemos = pathconvert(root_tlbx+"/demos/toolbox_skeleton.dem.gateway.sce",%F,%T);
+//	add_demo("Toolbox skeleton",pathdemos);
+//	clear pathdemos add_demo;
+//end
+
+clear root_tlbx;
+clear etc_tlbx;

@@ -1,0 +1,77 @@
+%<TpX v="5" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="2" BitmapRes="20000" HatchingStep="2" DottedSize="0.5" DashSize="1" LineWidth="0.3">
+%  <rect x="50" y="90" w="25" h="37"/>
+%  <line x1="50" y1="125" x2="45" y2="125"/>
+%  <line x1="50" y1="120" x2="45" y2="120"/>
+%  <text x="51" y="123.5" t="1" h="4"/>
+%  <text x="51" y="119" t="3" h="4"/>
+%  <text x="51" y="111" t="5" h="4"/>
+%  <text x="51" y="106.5" t="7" h="4"/>
+%  <line x1="50" y1="112.5" x2="45" y2="112.5"/>
+%  <line x1="50" y1="107.5" x2="45" y2="107.5"/>
+%  <line x1="50" y1="92.5" x2="45" y2="92.5"/>
+%  <line x1="50" y1="97.5" x2="45" y2="97.5"/>
+%  <line x1="50" y1="125" x2="45" y2="125"/>
+%  <line x1="50" y1="120" x2="45" y2="120"/>
+%  <line x1="50" y1="112.5" x2="45" y2="112.5"/>
+%  <line x1="50" y1="107.5" x2="45" y2="107.5"/>
+%  <line x1="50" y1="97.5" x2="45" y2="97.5"/>
+%  <line x1="50" y1="92.5" x2="45" y2="92.5"/>
+%  <line x1="80" y1="125" x2="75" y2="125"/>
+%  <line x1="80" y1="120" x2="75" y2="120"/>
+%  <line x1="80" y1="112.5" x2="75" y2="112.5"/>
+%  <line x1="80" y1="107.5" x2="75" y2="107.5"/>
+%  <line x1="80" y1="97.5" x2="75" y2="97.5"/>
+%  <line x1="80" y1="92.5" x2="75" y2="92.5"/>
+%  <text x="72" y="92" t="n" h="4"/>
+%  <text x="62.705" y="107.045" t=". . ." h="5" rotdeg="270"/>
+%  <text x="72" y="92" t="n" h="4"/>
+%  <text x="69" y="96" t="n-2" h="4"/>
+%  <text x="71" y="123.3" t="2" h="4"/>
+%  <text x="71" y="119" t="4" h="4" li="none"/>
+%  <text x="71" y="111.3" t="6" h="4"/>
+%  <text x="71" y="107" t="8" h="4" li="none"/>
+%  <text x="51" y="97" t="n-3" h="4"/>
+%  <text x="51" y="92" t="n-1" h="4"/>
+%</TpX>
+\begin{figure}
+\centering
+\ifpdf
+  \setlength{\unitlength}{1bp}%
+  \begin{picture}(110.55, 116.22)(0,0)
+  \put(0,0){\includegraphics{PortMapping_OE.pdf}}
+  \put(22.68,100.63){\fontsize{11.38}{13.66}\selectfont 1}
+  \put(22.68,87.87){\fontsize{11.38}{13.66}\selectfont 3}
+  \put(22.68,65.20){\fontsize{11.38}{13.66}\selectfont 5}
+  \put(22.68,52.44){\fontsize{11.38}{13.66}\selectfont 7}
+  \put(82.20,11.34){\fontsize{11.38}{13.66}\selectfont n}
+  \put(55.86,53.99){\rotatebox{270.00}{\fontsize{14.23}{17.07}\selectfont \smash{\makebox[0pt][l]{. . .}}}}
+  \put(82.20,11.34){\fontsize{11.38}{13.66}\selectfont n}
+  \put(73.70,22.68){\fontsize{11.38}{13.66}\selectfont n-2}
+  \put(79.37,100.06){\fontsize{11.38}{13.66}\selectfont 2}
+  \put(79.37,87.87){\fontsize{11.38}{13.66}\selectfont 4}
+  \put(79.37,66.05){\fontsize{11.38}{13.66}\selectfont 6}
+  \put(79.37,53.86){\fontsize{11.38}{13.66}\selectfont 8}
+  \put(22.68,25.51){\fontsize{11.38}{13.66}\selectfont n-3}
+  \put(22.68,11.34){\fontsize{11.38}{13.66}\selectfont n-1}
+  \end{picture}%
+\else
+  \setlength{\unitlength}{1bp}%
+  \begin{picture}(110.55, 116.22)(0,0)
+  \put(0,0){\includegraphics{PortMapping_OE}}
+  \put(22.68,100.63){\fontsize{11.38}{13.66}\selectfont 1}
+  \put(22.68,87.87){\fontsize{11.38}{13.66}\selectfont 3}
+  \put(22.68,65.20){\fontsize{11.38}{13.66}\selectfont 5}
+  \put(22.68,52.44){\fontsize{11.38}{13.66}\selectfont 7}
+  \put(82.20,11.34){\fontsize{11.38}{13.66}\selectfont n}
+  \put(55.86,53.99){\rotatebox{270.00}{\fontsize{14.23}{17.07}\selectfont \smash{\makebox[0pt][l]{. . .}}}}
+  \put(82.20,11.34){\fontsize{11.38}{13.66}\selectfont n}
+  \put(73.70,22.68){\fontsize{11.38}{13.66}\selectfont n-2}
+  \put(79.37,100.06){\fontsize{11.38}{13.66}\selectfont 2}
+  \put(79.37,87.87){\fontsize{11.38}{13.66}\selectfont 4}
+  \put(79.37,66.05){\fontsize{11.38}{13.66}\selectfont 6}
+  \put(79.37,53.86){\fontsize{11.38}{13.66}\selectfont 8}
+  \put(22.68,25.51){\fontsize{11.38}{13.66}\selectfont n-3}
+  \put(22.68,11.34){\fontsize{11.38}{13.66}\selectfont n-1}
+  \end{picture}%
+\fi
+\end{figure}

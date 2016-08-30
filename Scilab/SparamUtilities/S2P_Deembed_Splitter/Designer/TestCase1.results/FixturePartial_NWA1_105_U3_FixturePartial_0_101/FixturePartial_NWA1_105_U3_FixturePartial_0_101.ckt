@@ -1,0 +1,36 @@
+* 175;FixturePartial.ckt
+
+.CIRCUITNAME "FixturePartial"
+.rootnamemap 175;FixturePartial
+.namemap
+W1=175;FixturePartial;166
+L1=175;FixturePartial;167
+C2=175;FixturePartial;169
+C6=175;FixturePartial;168
+.endnamemap
+.stringparam syslib = "C:\Ansoft\DesignerSV2\DesignerSV2\syslib"
+.stringparam userlib = "C:\Ansoft\DesignerSV2\DesignerSV2\userlib"
+.stringparam personallib = "C:\Ansoft\DesignerSV2\MyProjects\PersonalLib"
+.stringparam projectdir = "D:\Shared\Split_Deembedd"
+
+*begin toplevel circuit
+
+.SUB Microstrip MS(
++   H=6.6mil Er=3.50000000000000 TAND=0.0250000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413800000000 T1=0.7mil)
+
+MSTRL:166 Port1_Fixture_P net_66_1_1 W=10mil P=2500mil SUB=Microstrip
+IND:167 net_66_1_1 Port2_Fixture_P L=0.25nH 
+CAP:169 0 Port2_Fixture_P C=0.25pF 
+CAP:168 0 net_66_1_1 C=0.25pF 
+PORT:Port1_Fixture_P Port1_Fixture_P 0 PNUM=1 rz=50Ohm iz=0Ohm 
+PORT:Port2_Fixture_P Port2_Fixture_P 0 PNUM=2 rz=50Ohm iz=0Ohm 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 0.01GHz 20GHz 0.01GHz
++ SWPORD = {F}
++ SolutionFile="C:\Ansoft\DesignerSV2\Temp\TestCase1.results\FixturePartial_NWA1_105_U3_FixturePartial_0_101\FixturePartial_NWA1_105_U3_FixturePartial_0_101.sol"
+
+.end

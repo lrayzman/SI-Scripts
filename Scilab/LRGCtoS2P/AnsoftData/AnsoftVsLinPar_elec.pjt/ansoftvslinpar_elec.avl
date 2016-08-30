@@ -1,0 +1,54 @@
+B_DATA
+ B_ADAPTV 5
+  B_ADPDAT
+   solver ac2d
+   passnum 1
+   ntrig 64
+   tot_egy 2.891699e-011
+   tot_err_egy 7.274414e-013
+   max_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   min_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   tploss 1.589922e-002
+  E_ADPDAT
+  B_ADPDAT
+   solver ac2d
+   passnum 2
+   ntrig 72
+   tot_egy 2.886785e-011
+   tot_err_egy 7.396015e-013
+   max_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   min_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   tploss 1.587996e-002
+  E_ADPDAT
+  B_ADPDAT
+   solver ac2d
+   passnum 3
+   ntrig 83
+   tot_egy 2.928524e-011
+   tot_err_egy 6.341255e-013
+   max_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   min_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   tploss 1.608676e-002
+  E_ADPDAT
+  B_ADPDAT
+   solver ac2d
+   passnum 4
+   ntrig 102
+   tot_egy 2.893042e-011
+   tot_err_egy 3.098123e-013
+   max_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   min_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   tploss 1.580182e-002
+  E_ADPDAT
+  B_ADPDAT
+   solver ac2d
+   passnum 5
+   ntrig 123
+   tot_egy 2.909840e-011
+   tot_err_egy 2.440549e-013
+   max_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   min_fld 0.000000e+000 0.000000e+000 0.000000e+000
+   tploss 1.589475e-002
+  E_ADPDAT
+ E_ADAPTV
+E_DATA

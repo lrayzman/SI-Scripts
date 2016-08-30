@@ -1,0 +1,1 @@
+Collection of patterns of 8b10bEncoder scripts

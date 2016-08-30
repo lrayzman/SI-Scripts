@@ -1,0 +1,52 @@
+B_HEADER
+ FileSign MTRL FormVers 1.000 CreaSign MATS CreaVers 3.000
+ FileMark DBRootFile
+E_HEADER
+
+B_DATA 
+ B_DBASE ansoftvslinpar_elec 1 BlockSep B_MATTAB GlbIndex 80 
+  B_SYMTAB 
+   PHI = 0
+   R = 0
+   X = 0
+   Y = 0
+  E_SYMTAB 
+  B_MATTAB ansoftvslinpar_elec 1 BlockSep B_MATERL ParentDB ansoftvslinpar_elec 
+   B_MATERL vacuum 1 Locked CndClass 1 
+    DeriveFr vacuum 1 External 
+    B_PROP Permittivity Constant 1 
+    E_PROP 
+    B_PROP Conductivity Constant 0 
+    E_PROP 
+    B_PROP DielectricLoss Constant 0 
+    E_PROP 
+    B_PROP ElecLossTan Constant 0 
+    E_PROP 
+    B_PROP Permeability Constant 1 
+    E_PROP 
+    B_PROP ImgPermeability Constant 0 
+    E_PROP 
+    B_PROP MagLossTan Constant 0 
+    E_PROP 
+   E_MATERL 
+   B_MATERL perf_conductor 2 Locked CndClass 128 
+    DeriveFr perf_conductor 3 External 
+    B_PROP Permittivity Constant 1 
+    E_PROP 
+    B_PROP Conductivity Constant 0 
+    E_PROP 
+    B_PROP DielectricLoss Constant 0 
+    E_PROP 
+    B_PROP ElecLossTan Constant 0 
+    E_PROP 
+   E_MATERL 
+   B_MATERL Substrate 3 CndClass 8 
+    DeriveFr vacuum 1 Local 
+    B_PROP Permittivity Constant 3.9 
+    E_PROP 
+    B_PROP Conductivity Constant 0.010848 
+    E_PROP 
+   E_MATERL 
+  E_MATTAB 
+ E_DBASE 
+E_DATA 

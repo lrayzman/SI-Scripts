@@ -1,0 +1,11 @@
+                Maxwell SV Version 9.0.573SV beginning
+      ansoftvslinpar_elec on LENNY-LAPTOP at 07/28/2005 19:40:03
+-----------------------------------------------------------------------
+|               |   Real   |   Cpu    |  Memory  |                    |
+|    Command    |   Time   |   Time   |   in K   | Number of Elements |
+|---------------------------------------------------------------------|
+|                            Initial Mesh                             |
+|---------------------------------------------------------------------|
+| mesh_init     | 00:00:00 | 00:00:00 |  196800K |      84 triangles  |
+Finished ansoftvslinpar_elec on LENNY-LAPTOP in 00:00:00 at 07/28/2005 19:40:03
+
