@@ -1,0 +1,5 @@
+LIBRARY    sparlib_c.dll
+EXPORTS
+	sparlib_c_
+	sptlbx_readtchstn
+	sptlbx_writetchstn

@@ -1,0 +1,3 @@
+- Correct the memory leak in the main read loops where
+  the readline string that's separated by tokens is not freed
+  properly

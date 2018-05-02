@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ErrorHandlerTest">
+</Property><Property Name="Solution File" Value="C:\Applications\Scilab\scilab-5.4.1\contrib\SparamToolbox\src\c\ErrorHandlerTest\ErrorHandlerTest.sln">
+</Property><Property Name="Date" Value="Friday, February 14, 2014">
+</Property><Property Name="Time" Value="10:29 AM">
+</Property></Properties><Event ErrorLevel="0" Project="ErrorHandlerTest" Source="ErrorHandlerTest.vcproj" Description="Converting project file 'C:\Applications\Scilab\scilab-5.4.1\contrib\SparamToolbox\src\c\ErrorHandlerTest\ErrorHandlerTest.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ErrorHandlerTest" Source="ErrorHandlerTest.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ErrorHandlerTest" Source="ErrorHandlerTest.vcproj" Description="Done converting to new project file 'C:\Applications\Scilab\scilab-5.4.1\contrib\SparamToolbox\src\c\ErrorHandlerTest\ErrorHandlerTest.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ErrorHandlerTest" Source="ErrorHandlerTest.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ErrorHandlerTest.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ErrorHandlerTest.sln" Description="Converted">
+</Event></UpgradeLog>

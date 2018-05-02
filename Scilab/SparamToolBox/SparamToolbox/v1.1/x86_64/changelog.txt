@@ -1,0 +1,8 @@
+changelog of the S-param Toolbox
+
+
+Version 1.0  - Initial release with sptlbx_readtchstn and sptlbx_writetchstn function
+Version 1.1  - Compatability update for 5.4.x(x64)
+               Improved the speed of Sptlbx_Writetchstn()
+
+

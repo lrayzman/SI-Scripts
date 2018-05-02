@@ -1,0 +1,17 @@
+changelog of the S-param Toolbox
+
+
+Version 1.0  - Initial release with sptlbx_readtchstn and sptlbx_writetchstn function
+Version 1.1  - Compatability update for 5.4.x(x64)
+               Improved the speed of Sptlbx_Writetchstn
+Version 1.2  - Allow reading of improperly formatted files that don't partition less than 
+                   four entries per data line
+               Added handling of Touchstone 2.0 files (reports unsupported error to user)
+               Added support for reading port impedances in sptlbx_readtchstn
+               Added support for reading all comment lines in sptlbx_readtchstn 
+               Added support for writing comment lines and port impedance in sptlbx_writetchstn 
+                   
+                
+               
+
+

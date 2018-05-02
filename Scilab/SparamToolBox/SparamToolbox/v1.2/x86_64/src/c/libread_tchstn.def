@@ -1,0 +1,4 @@
+LIBRARY    libread_tchstn.dll
+EXPORTS
+	fetchline
+	read_tchstn

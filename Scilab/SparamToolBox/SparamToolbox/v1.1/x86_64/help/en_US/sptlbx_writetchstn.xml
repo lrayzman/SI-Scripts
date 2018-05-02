@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//=========================S-parameter ToolBox====================== 
+//
+// SPTLBX_WRITETCHSTN()
+//  
+// (c)2010  L. Rayzman
+// 
+// Created      : 02/06/2010
+// Last Modified: 
+// ====================================================================
+ -->
+<refentry version="5.0-subset Scilab" xml:id="sptlbx_writetchstn" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2010-02-06 23:12:00
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>sptlbx_writetchstn</refname>
+
+    <refpurpose>Touchstone file write</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+
+    <synopsis> sptlbx_writetchstn(a, b, c)</synopsis>
+  </refsynopsisdiv>
+  
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>a</term>
+        <listitem>
+          <para>
+            string
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>b</term>
+        <listitem>
+          <para>
+            real-valued row vector
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c</term>
+        <listitem>
+          <para>
+            square hypermatrix of complex values
+         </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+
+  <refsection>
+    <title>Description</title>
+
+    <para>Write S-parameter data to Touchstone file</para>
+    
+    <para>String <literal>a</literal> is the filename (excluding extension) of the Touchstone file. </para>
+
+    <para>Vector <literal>b</literal> contains the frequency points of the S-parameters </para>
+    
+    <para>Hypermatrix <literal>c</literal> is a square matrix and must be the same depth as the frequency vector <literal>b</literal> </para>
+    
+  </refsection>
+
+  <refsection>
+    <title>Examples</title>
+
+    <programlisting role="example">sptlbx_writetchstn(filename, frequency, data)</programlisting>
+  </refsection>
+  
+   <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="sptlbx_readtchstn">sptlbx_readtchstn</link>
+      </member>
+    </simplelist>
+  </refsection>
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Lenny Rayzman</member>
+    </simplelist>
+  </refsection>
+</refentry>

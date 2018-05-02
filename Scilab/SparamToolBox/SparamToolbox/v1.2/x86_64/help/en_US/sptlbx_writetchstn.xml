@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//=========================S-parameter ToolBox====================== 
+//
+// SPTLBX_WRITETCHSTN()
+//  
+// (c)2010-2015  L. Rayzman
+// 
+// Created      : 02/06/2010
+// Last Modified: 07/22/2015  - Added support for comments
+//                            - Added support for port impedance
+// ====================================================================
+ -->
+<refentry version="5.0-subset Scilab" xml:id="sptlbx_writetchstn" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2015-07-22 16:22:00
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>sptlbx_writetchstn</refname>
+
+    <refpurpose>Touchstone file write</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+
+    <synopsis> sptlbx_writetchstn(filename, freq, data)</synopsis>
+    <synopsis> sptlbx_writetchstn(filename, freq, data, R0)</synopsis>
+    <synopsis> sptlbx_writetchstn(filename, freq, data, R0, comment)</synopsis>
+  </refsynopsisdiv>
+  
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>filename</term>
+        <listitem>
+          <para>
+            string
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>freq</term>
+        <listitem>
+          <para>
+            real-valued row vector
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>data</term>
+        <listitem>
+          <para>
+            square hypermatrix of complex values
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>R0</term>
+        <listitem>
+          <para>
+            real value
+         </para>
+        </listitem>
+      </varlistentry>      
+      <varlistentry>
+        <term>comment</term>
+        <listitem>
+          <para>
+            strings row vector
+         </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+
+  <refsection>
+    <title>Description</title>
+
+    <para>Write S-parameter data to Touchstone file</para>
+    
+    <para>String <literal>filename</literal> is the filename (excluding extension) of the Touchstone file </para>
+
+    <para>Vector <literal>freq</literal> contains the frequency points of the S-parameters </para>
+    
+    <para>Hypermatrix <literal>data</literal> is a square matrix and must be the same depth as the frequency vector <literal>freq</literal> </para>
+    
+     <para>Real <literal>R0</literal> is the port impedance </para>
+    
+    <para>Vector  <literal>comment</literal> containts strings placed as comments in the header of the touchstone file prior to the options line. Each element in the string vector is placed as a new comment line </para>
+    
+  </refsection>
+
+  <refsection>
+    <title>Examples</title>
+
+    <programlisting role="example"> sptlbx_writetchstn(filename, frequency, data, R0, comment)   
+    </programlisting>
+  </refsection>
+  
+   <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="sptlbx_readtchstn">sptlbx_readtchstn</link>
+      </member>
+    </simplelist>
+  </refsection>
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Lenny Rayzman</member>
+    </simplelist>
+  </refsection>
+</refentry>

@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<book version='5.0-subset Scilab' xml:lang='en_US'>
+  <info xml:id='s-parameters_toolbox_manual'>
+    <title>S-parameters Toolbox</title>
+  </info>
+
+<part xml:id='section_06690d9fea1583029e3d1e2372332fa5'>
+<title>S-parameters Toolbox</title>
+
+
+<refentry version='5.0-subset Scilab' xml:id='sptlbx_readtchstn' xml:lang='en'>
+  <info>
+    <pubdate>$LastChangedDate: 2010-02-06 23:12:00
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>sptlbx_readtchstn</refname>
+
+    <refpurpose>Touchstone file read</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+
+    <synopsis>[a,b] = sptlbx_readtchstn(c)</synopsis>
+  </refsynopsisdiv>
+  
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>a</term>
+        <listitem>
+          <para>
+            real-valued row vector
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>b</term>
+        <listitem>
+          <para>
+            square hypermatrix of complex values
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c</term>
+        <listitem>
+          <para>
+            string
+         </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+
+  <refsection>
+    <title>Description</title>
+
+    <para>Reads S-parameters from Touchstone file referenced by filename string <literal>c</literal>. 
+        Returns frequency points in <literal>a</literal> and s-parameter data into <literal>b</literal>.
+    </para>
+        
+    <para>
+        <literal>b</literal> is a square complex hypermatrix of the same depth as the frequency vector
+    </para>
+
+    <para> </para>
+  </refsection>
+
+  <refsection>
+    <title>Examples</title>
+
+    <programlisting role='example'>[frequency, data]=sptlbx_readtchstn(filename)</programlisting>
+  </refsection>
+  
+  <refsection>
+    <title>See Also</title>
+    <simplelist type='inline'>
+      <member>
+        <link linkend='sptlbx_writetchstn'>sptlbx_writetchstn</link>
+      </member>
+    </simplelist>
+  </refsection>
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type='vert'>
+      <member>Lenny Rayzman</member>
+    </simplelist>
+  </refsection>
+</refentry>
+
+
+
+<refentry version='5.0-subset Scilab' xml:id='sptlbx_writetchstn' xml:lang='en'>
+  <info>
+    <pubdate>$LastChangedDate: 2010-02-06 23:12:00
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>sptlbx_writetchstn</refname>
+
+    <refpurpose>Touchstone file write</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+
+    <synopsis> sptlbx_writetchstn(a, b, c)</synopsis>
+  </refsynopsisdiv>
+  
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>a</term>
+        <listitem>
+          <para>
+            string
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>b</term>
+        <listitem>
+          <para>
+            real-valued row vector
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c</term>
+        <listitem>
+          <para>
+            square hypermatrix of complex values
+         </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+
+  <refsection>
+    <title>Description</title>
+
+    <para>Write S-parameter data to Touchstone file</para>
+    
+    <para>String <literal>a</literal> is the filename (excluding extension) of the Touchstone file. </para>
+
+    <para>Vector <literal>b</literal> contains the frequency points of the S-parameters </para>
+    
+    <para>Hypermatrix <literal>c</literal> is a square matrix and must be the same depth as the frequency vector <literal>b</literal> </para>
+    
+  </refsection>
+
+  <refsection>
+    <title>Examples</title>
+
+    <programlisting role='example'>sptlbx_writetchstn(filename, frequency, data)</programlisting>
+  </refsection>
+  
+   <refsection>
+    <title>See Also</title>
+    <simplelist type='inline'>
+      <member>
+        <link linkend='sptlbx_readtchstn'>sptlbx_readtchstn</link>
+      </member>
+    </simplelist>
+  </refsection>
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type='vert'>
+      <member>Lenny Rayzman</member>
+    </simplelist>
+  </refsection>
+</refentry>
+
+</part>
+</book>

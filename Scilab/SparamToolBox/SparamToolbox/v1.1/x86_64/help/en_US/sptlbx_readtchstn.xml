@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//=========================S-parameter ToolBox====================== 
+//
+// SPTLBX_READTCHSTN()
+//  
+// 
+// (c)2010  L. Rayzman
+// 
+// Created      : 02/06/2010
+// Last Modified: 
+// ====================================================================
+ -->
+<refentry version="5.0-subset Scilab" xml:id="sptlbx_readtchstn" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2010-02-06 23:12:00
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>sptlbx_readtchstn</refname>
+
+    <refpurpose>Touchstone file read</refpurpose>
+  </refnamediv>
+
+  <refsynopsisdiv>
+    <title>Calling Sequence</title>
+
+    <synopsis>[a,b] = sptlbx_readtchstn(c)</synopsis>
+  </refsynopsisdiv>
+  
+  <refsection>
+    <title>Parameters</title>
+    <variablelist>
+      <varlistentry>
+        <term>a</term>
+        <listitem>
+          <para>
+            real-valued row vector
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>b</term>
+        <listitem>
+          <para>
+            square hypermatrix of complex values
+         </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>c</term>
+        <listitem>
+          <para>
+            string
+         </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsection>
+
+  <refsection>
+    <title>Description</title>
+
+    <para>Reads S-parameters from Touchstone file referenced by filename string <literal>c</literal>. 
+        Returns frequency points in <literal>a</literal> and s-parameter data into <literal>b</literal>.
+    </para>
+        
+    <para>
+        <literal>b</literal> is a square complex hypermatrix of the same depth as the frequency vector
+    </para>
+
+    <para> </para>
+  </refsection>
+
+  <refsection>
+    <title>Examples</title>
+
+    <programlisting role="example">[frequency, data]=sptlbx_readtchstn(filename)</programlisting>
+  </refsection>
+  
+  <refsection>
+    <title>See Also</title>
+    <simplelist type="inline">
+      <member>
+        <link linkend="sptlbx_writetchstn">sptlbx_writetchstn</link>
+      </member>
+    </simplelist>
+  </refsection>
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Lenny Rayzman</member>
+    </simplelist>
+  </refsection>
+</refentry>

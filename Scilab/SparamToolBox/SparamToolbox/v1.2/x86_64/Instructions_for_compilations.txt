@@ -1,0 +1,76 @@
+**************************************************************************
+* S-Parameter Utilities for Scilab 5.x Toolbox Compilation Readme
+*
+* Version 1.2
+* 
+* (c)2010-2015  L. Rayzman
+* 
+**************************************************************************
+
+--- OVERALL INSTALLATION STEPS ---
+
+- Install Visual Studio 2010 Express
+- Install Windows 7.1 SDK
+    - Ensure x64 bit compiler tools are all selected (yes, by default)
+    - Uninstall MIcrosoft Visual C++ 2010 Redistributables that may be installed.
+      The SDK install conflicts with newer version of redistributable and may fail
+      during the installation process. Subsequently install the latest version
+      of the redistributable over the one installed by the SDK
+    
+- Set up a release compilation environment for the SDK by adding the following 
+   shortcut in the Start->All Programs->Microsoft Windows SDK v7.1
+   (You can use the Debug shortcut and just modify it to create a release one)
+
+   C:\Windows\System32\cmd.exe /E:ON /V:ON /T:0E /K "C:\Program Files\Microsoft SDKs\Windows   \v7.1\Bin\SetEnv.cmd" /Release
+
+- If properly set up when in Scilab the following commands should show as
+  haveacompiler -> T
+  findmsvccompiler -> msvc100express
+
+
+- VC++ needs to be configured for x64 compilation. Make sure to select proper configuration.
+  To set up: right click on the Project in the Solutions Explorer tab
+  Configuration Properties -> Platform Toolset -> Windows7.1SDK 
+  If only vc100 or vc90 are available then SDK is not set up properly
+
+
+--- SOURCE FILES ---
+ 
+  Source files of interest under SparamToolbox directory
+
+  \src\c                   - read_tchstn and write_tchstn low level functions source and supporting file
+  \src\c\MainCodeRead      - VC++ project and driver/test code for testing read_tchstn function
+  \src\c\MainCodeWrite     - VC++ project and driver/test code for testing write_tchstn function
+  \src\c\ErrorHandlerTest  - VC++ project and driver/test code for testing the error handler
+  \sci_gateway\c           - Scilab gateway sources for read_tchstn and write_tchstn 
+  \help\en_US              - XML files containing the help man
+  \tests                   - Scilab code examples for sptlbx_readtchstn and sptlbx_writestchstn
+
+
+--- GENERAL DEBUG STEPS ---
+
+- To debug read_tchstn  or write_tchstn  use the VC++ projects along with the driver test functions
+- To debug gateways generally have to rebuild in scilab.  There is no debugging capability other 
+  than debug messages. 
+
+--- AUTOMATIC TOOLBOX LOADING ---
+
+- For automatic loading of the toolbox add the following line to loader.sce
+  located in SCI\contrib  directory
+
+
+     exec(SCI+"\contrib\SParamToolbox\etc\"+"SParamToolbox.start");
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
