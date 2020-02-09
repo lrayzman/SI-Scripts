@@ -1,13 +1,13 @@
-s// ======================   S-param Loss Plotter ====================
+// ======================   S-param Loss Plotter ====================
 // 
 // Creates an s2p file with loss profile of the cannonical loss
 // form
 //
-// (c)2013  L. Rayzman
+// (c)2013-2015  L. Rayzman
 //
 //
 // Created      : 01/18/2013
-// Last Modified:  01/24/2013
+// Last Modified:  05/04/2015 - Updated for Scilab 5.5.x
 //
 //
 // ====================================================================
@@ -68,9 +68,9 @@ version(2)=msscanf(version_str(2), '%d');
 
 
 if (version(1)<5) then
-  error("Invalid Scilab version. Version 5.2 or greater is required");
-elseif (version(2) < 2) then
-  error("Invalid Scilab version. Version 5.2 or greater is required");
+  error("Invalid Scilab version. Version 5.5 or greater is required");
+elseif (version(2) < 5) then
+  error("Invalid Scilab version. Version 5.5 or greater is required");
 end    
 
 
@@ -114,7 +114,7 @@ end
 ///////////////////
 
 spoutdata=zeros(2,2,numofreqs);
-spfitdata=-(alphaf*sqrt(spreffreqs)+betaf*spreffreqs+gammaf*spreffreqs^2);
+spfitdata=-(alphaf*sqrt(spreffreqs)+betaf*spreffreqs+gammaf*spreffreqs.^2);
 
 // Compute data for each freq
 for i=1:numofreqs,
@@ -161,7 +161,7 @@ end
          
    
     plot_1_axes  = newaxes();                                                               // Set-up plot size
-    plot_1_axes.margins=[plot_1_region_margin_lf plot_1_region_margin_rt plot_1_region_margin_top  plot_1_region_margin_bot]
+    plot_1_axes.margins=[plot_1_region_margin_lf plot_1_region_margin_rt plot_1_region_margin_top  plot_1_region_margin_bot];
     
     ploth=gca();
     ploth.grid=[33,33];                                                                     // Turn on grid
@@ -255,7 +255,7 @@ function [fitdata]=refresh_display(reffreqs)
  
     current_axis=gca();
     
-    fitdata=(alphaf*sqrt(reffreqs)+betaf*reffreqs+gammaf*reffreqs^2);
+    fitdata=(alphaf*sqrt(reffreqs)+betaf*reffreqs+gammaf*reffreqs.^2);
        
     current_axis.children(1).children.data(:,2)=fitdata';       // Compute and plot new curve fit data
     
