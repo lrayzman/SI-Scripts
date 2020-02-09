@@ -1,0 +1,1 @@
+If I ever design multiple utilites then bring out the functions into a common library

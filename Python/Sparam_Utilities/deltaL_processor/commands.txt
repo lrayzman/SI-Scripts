@@ -1,0 +1,2 @@
+in_arg='C:\\WORK\\Tools\\SITools\\Sparam_Utilities\\python\\deltaL_processor\\listfile.txt'
+out_arg='C:\\WORK\\Tools\\SITools\\Sparam_Utilities\\python\\deltaL_processor'
